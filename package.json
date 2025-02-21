@@ -1,0 +1,20 @@
+{
+  "name": "life-coach",
+  "version": "1.0.0",
+  "description": "这是一个基于DeepSeek R1 API开发的个人成长辅导网站，通过AI对话为用户提供个性化的建议和指导。",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2"
+  }
+}
