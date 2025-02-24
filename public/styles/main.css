@@ -1,0 +1,20 @@
+.header {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.header .subtitle {
+    font-size: 1.4rem;
+    color: #4a5568;
+    font-weight: 500;
+}

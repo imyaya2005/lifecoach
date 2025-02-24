@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Coach AI 助手</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/emoji-picker.css">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header class="header">
+        <h1>Life Coach AI 助手</h1>
+        <p class="subtitle">你的个人成长伙伴</p>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <div class="content-layout">
+            <!-- 左侧区域 -->
+            <div class="left-sidebar">
+                <!-- 情绪曲线图区域 -->
+                <section class="emotion-chart">
+                    <h3>情绪变化趋势</h3>
+                    <div id="emotionChart" class="chart-container"></div>
+                </section>
+
+                <!-- 历史对话控制区域 -->
+                <section class="history-controls">
+                    <button id="newChatBtn" class="control-button">新对话</button>
+                    <button id="exportDataBtn" class="control-button">导出数据</button>
+                </section>
+            </div>
+
+            <!-- 右侧对话区域 -->
+            <div class="chat-container">
+                <!-- 对话历史区域 -->
+                <section class="chat-history" id="chatHistory">
+                    <!-- 欢迎消息 -->
+                    <div class="message system">
+                        <p>欢迎使用 Life Coach AI 助手！我是你的个人成长顾问，让我们开始对话吧。</p>
+                    </div>
+                </section>
+
+                <!-- 输入区域 -->
+                <div class="input-area">
+                    <form class="chat-form" id="chatForm">
+                        <textarea class="message-input" id="messageInput" placeholder="输入你的问题..." rows="3"></textarea>
+                        <button type="submit" class="send-button" id="sendButton">发送</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 周回顾区域 -->
+            <div class="weekly-review">
+                <h2>本周对话回顾</h2>
+                <button class="analyze-all-button" id="analyzeAllButton">开始分析</button>
+                <div class="review-sections">
+                    <div class="review-section">
+                        <div class="review-section-icon">📊</div>
+                        <div class="review-section-title">主要话题</div>
+                        <div class="review-content" id="topicsContent"></div>
+                    </div>
+                    <div class="review-section">
+                        <div class="review-section-icon">😊</div>
+                        <div class="review-section-title">情绪变化</div>
+                        <div class="review-content" id="emotionsContent"></div>
+                    </div>
+                    <div class="review-section">
+                        <div class="review-section-icon">🔍</div>
+                        <div class="review-section-title">关键词</div>
+                        <div class="review-content" id="keywordsContent"></div>
+                    </div>
+                    <div class="review-section">
+                        <div class="review-section-icon">🤖</div>
+                        <div class="review-section-title">AI洞察</div>
+                        <div class="review-content" id="insightsContent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>© 2024 Life Coach AI 助手</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>
